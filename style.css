@@ -1,0 +1,92 @@
+:root {
+    --main-color: blue;
+    --bg-color: lightgray;
+    --text-color: black;
+    --font: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.logo {
+    width: 100px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--main-color);
+}
+
+section {
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid var(--main-color);
+    background-color: white;
+}
+
+img {
+    border: 2px solid var(--main-color);
+}
+
+footer {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li:first-child a {
+    color: red;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    .logo {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    main {
+        display: flex;
+    }
+    section {
+        flex: 1;
+        margin: 10px;
+    }
+}
